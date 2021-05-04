@@ -61,11 +61,11 @@ if (result_mode == '1'):
 else:
     constiuency_number=[]
     constiuency_name =[]
-    Leading_candidate=[]
-    Trailing_candidate=[]
-    Margins=[]
-    leading_party=[]
-    trailing_party=[]
+    Leading_candidate =[]
+    Trailing_candidate =[]
+    Margins =[]
+    leading_party =[]
+    trailing_party =[]
     start_url='https://results.eci.gov.in/Result2021/partywiseresult-S03.htm'
     source=requests.get(start_url)
     html =source.text
