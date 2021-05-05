@@ -50,7 +50,7 @@ if (result_mode == '1'):
     print("\n Want a csv document of it?")
     choose=input("type yes or no")
     if(choose.lower()=="yes"):
-        with open(state+''+str(time.time()), 'w', newline='') as general_file:
+        with open(state+'PartyWise'+str(time.time())+'.csv', 'w', newline='') as general_file:
             writer=csv.writer(general_file)
             writer.writerow(['party','Seats_Won'])
             for i in range(len(party_name)):
